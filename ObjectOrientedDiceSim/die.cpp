@@ -19,7 +19,7 @@ int* die::rollDice()
 
 	for (int i = 0; i < dieCount; i++)
 	{
-		result[i] = rand() % faceCount;
+		result[i] = rand() % (faceCount - 1) + 1;
 	}
 
 	return result;
